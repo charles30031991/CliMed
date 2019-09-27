@@ -1,0 +1,246 @@
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\ApplicationInsights.config
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\roslyn\csc.exe
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\roslyn\vbc.exe
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\roslyn\VBCSCompiler.exe
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\CliMed.dll.config
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\CliMed.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\CliMed.pdb
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Antlr3.Runtime.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\EntityFramework.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\EntityFramework.SqlServer.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.AI.Web.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.ApplicationInsights.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.Owin.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.Owin.Security.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Newtonsoft.Json.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Owin.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\System.Web.Helpers.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\System.Web.Mvc.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\System.Web.Optimization.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\System.Web.Razor.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\System.Web.WebPages.Deployment.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\System.Web.WebPages.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\System.Web.WebPages.Razor.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\WebGrease.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.AI.Web.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.ApplicationInsights.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\System.Web.Helpers.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\System.Web.Mvc.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\System.Web.Optimization.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\System.Web.Razor.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\System.Web.WebPages.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\System.Web.WebPages.Deployment.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\System.Web.WebPages.Razor.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Antlr3.Runtime.pdb
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Newtonsoft.Json.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\EntityFramework.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\EntityFramework.SqlServer.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.Owin.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.Owin.Security.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\obj\Debug\CliMed.csprojResolveAssemblyReference.cache
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\obj\Debug\CliMed.dll
+C:\Users\charles.rodrigues\Documents\Visual Studio 2015\Projects\CliMed\CliMed\obj\Debug\CliMed.pdb
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\ApplicationInsights.config
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\roslyn\csc.exe
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\roslyn\vbc.exe
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\roslyn\VBCSCompiler.exe
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\CliMed.dll.config
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\CliMed.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\CliMed.pdb
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Antlr3.Runtime.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\EntityFramework.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\EntityFramework.SqlServer.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.AI.Web.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.ApplicationInsights.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.Owin.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.Owin.Security.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Newtonsoft.Json.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Owin.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\System.Web.Helpers.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\System.Web.Mvc.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\System.Web.Optimization.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\System.Web.Razor.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\System.Web.WebPages.Deployment.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\System.Web.WebPages.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\System.Web.WebPages.Razor.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\WebGrease.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.AI.Web.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.ApplicationInsights.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\System.Web.Helpers.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\System.Web.Mvc.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\System.Web.Optimization.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\System.Web.Razor.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\System.Web.WebPages.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\System.Web.WebPages.Deployment.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\System.Web.WebPages.Razor.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Antlr3.Runtime.pdb
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Newtonsoft.Json.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\EntityFramework.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\EntityFramework.SqlServer.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.Owin.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.Owin.Security.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\obj\Debug\CliMed.csprojResolveAssemblyReference.cache
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\obj\Debug\CliMed.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\CliMed\obj\Debug\CliMed.pdb
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\ApplicationInsights.config
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\roslyn\csc.exe
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\roslyn\vbc.exe
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\roslyn\VBCSCompiler.exe
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\CliMed.dll.config
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\CliMed.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\CliMed.pdb
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Antlr3.Runtime.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\EntityFramework.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\EntityFramework.SqlServer.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.AI.Web.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.ApplicationInsights.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.Owin.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.Owin.Security.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Newtonsoft.Json.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Owin.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\System.Web.Helpers.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\System.Web.Mvc.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\System.Web.Optimization.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\System.Web.Razor.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\System.Web.WebPages.Deployment.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\System.Web.WebPages.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\System.Web.WebPages.Razor.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\WebGrease.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.AI.Web.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.ApplicationInsights.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\System.Web.Helpers.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\System.Web.Mvc.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\System.Web.Optimization.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\System.Web.Razor.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\System.Web.WebPages.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\System.Web.WebPages.Deployment.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\System.Web.WebPages.Razor.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Antlr3.Runtime.pdb
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Newtonsoft.Json.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\EntityFramework.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\EntityFramework.SqlServer.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.Owin.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.Owin.Security.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\obj\Debug\CliMed.csprojResolveAssemblyReference.cache
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\obj\Debug\CliMed.dll
+C:\Users\charles.rodrigues\Documents\GitHub\CliMed\CliMed\obj\Debug\CliMed.pdb

@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace CliMed.Controllers
 {
-    public class HomeController : Controller
+    public class DashboardController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Painel_Adm()
         {
             return View();
         }
