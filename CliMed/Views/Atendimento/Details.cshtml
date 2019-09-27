@@ -1,0 +1,59 @@
+﻿@model CliMed.Persistencia.TB_ATENDIMENTO
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TB_ATENDIMENTO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DT_DATA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DT_DATA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DS_DOENCA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DS_DOENCA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DS_MEDICAMENTOS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DS_MEDICAMENTOS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TB_AGENDA.DS_OBSERVACAO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TB_AGENDA.DS_OBSERVACAO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TB_USUARIO.NM_USUARIO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TB_USUARIO.NM_USUARIO)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CD_ATENDIMENTO }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

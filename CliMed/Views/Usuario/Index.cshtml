@@ -1,0 +1,52 @@
+﻿@model IEnumerable<CliMed.Persistencia.TB_USUARIO>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NM_USUARIO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DS_LOGIN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DS_SENHA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FL_ATIVO)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NM_USUARIO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DS_LOGIN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DS_SENHA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FL_ATIVO)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CD_USUARIO }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CD_USUARIO }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CD_USUARIO })
+        </td>
+    </tr>
+}
+
+</table>

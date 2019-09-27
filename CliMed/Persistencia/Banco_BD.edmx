@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="BD_CLIMED.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="TB_AGENDA">
+          <Key>
+            <PropertyRef Name="CD_AGENDA" />
+          </Key>
+          <Property Name="CD_AGENDA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CD_PACIENTE" Type="int" Nullable="false" />
+          <Property Name="CD_TIPO_SERVICO" Type="int" Nullable="false" />
+          <Property Name="CD_USUARIO" Type="int" Nullable="false" />
+          <Property Name="CD_SITUACAO_AGENDA" Type="tinyint" Nullable="false" />
+          <Property Name="DT_DATA" Type="smalldatetime" Nullable="false" />
+          <Property Name="DS_OBSERVACAO" Type="varchar" MaxLength="250" />
+          <Property Name="VL_VALOR" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="TB_ATENDIMENTO">
+          <Key>
+            <PropertyRef Name="CD_ATENDIMENTO" />
+          </Key>
+          <Property Name="CD_ATENDIMENTO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CD_AGENDA" Type="int" Nullable="false" />
+          <Property Name="CD_USUARIO" Type="int" Nullable="false" />
+          <Property Name="DT_DATA" Type="smalldatetime" Nullable="false" />
+          <Property Name="DS_DOENCA" Type="varchar" MaxLength="150" />
+          <Property Name="DS_MEDICAMENTOS" Type="varchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="TB_PACIENTE">
+          <Key>
+            <PropertyRef Name="CD_PACIENTE" />
+          </Key>
+          <Property Name="CD_PACIENTE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NM_PACIENTE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DS_CPF" Type="varchar" MaxLength="11" Nullable="false" />
+          <Property Name="DS_RG" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DS_TELEFONE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DT_NASCIMENTO" Type="date" Nullable="false" />
+          <Property Name="DS_CEP" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DS_UF" Type="varchar" MaxLength="2" Nullable="false" />
+          <Property Name="DS_CIDADE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DS_ENDERECO" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DS_BAIRRO" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_PERFIL">
+          <Key>
+            <PropertyRef Name="CD_PERFIL" />
+          </Key>
+          <Property Name="CD_PERFIL" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NM_PERFIL" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_PERFIL_USUARIO">
+          <Key>
+            <PropertyRef Name="CD_USUARIO" />
+            <PropertyRef Name="CD_PERFIL" />
+          </Key>
+          <Property Name="CD_USUARIO" Type="int" Nullable="false" />
+          <Property Name="CD_PERFIL" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_SITUACAO_AGENDA">
+          <Key>
+            <PropertyRef Name="CD_SITUACAO_AGENDA" />
+          </Key>
+          <Property Name="CD_SITUACAO_AGENDA" Type="tinyint" Nullable="false" />
+          <Property Name="NM_SITUACAO_AGENDA" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_TIPO_SERVICO">
+          <Key>
+            <PropertyRef Name="CD_TIPO_SERVICO" />
+          </Key>
+          <Property Name="CD_TIPO_SERVICO" Type="int" Nullable="false" />
+          <Property Name="NM_TIPO_SERVICO" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_USUARIO">
+          <Key>
+            <PropertyRef Name="CD_USUARIO" />
+          </Key>
+          <Property Name="CD_USUARIO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NM_USUARIO" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DS_LOGIN" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DS_SENHA" Type="varchar" MaxLength="350" Nullable="false" />
+          <Property Name="FL_ATIVO" Type="bit" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_TB_AGENDA_TB_PACIENTE">
+          <End Role="TB_PACIENTE" Type="Self.TB_PACIENTE" Multiplicity="1" />
+          <End Role="TB_AGENDA" Type="Self.TB_AGENDA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_PACIENTE">
+              <PropertyRef Name="CD_PACIENTE" />
+            </Principal>
+            <Dependent Role="TB_AGENDA">
+              <PropertyRef Name="CD_PACIENTE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_AGENDA_TB_SITUACAO_AGENDA">
+          <End Role="TB_SITUACAO_AGENDA" Type="Self.TB_SITUACAO_AGENDA" Multiplicity="1" />
+          <End Role="TB_AGENDA" Type="Self.TB_AGENDA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_SITUACAO_AGENDA">
+              <PropertyRef Name="CD_SITUACAO_AGENDA" />
+            </Principal>
+            <Dependent Role="TB_AGENDA">
+              <PropertyRef Name="CD_SITUACAO_AGENDA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_AGENDA_TB_TIPO_SERVICO">
+          <End Role="TB_TIPO_SERVICO" Type="Self.TB_TIPO_SERVICO" Multiplicity="1" />
+          <End Role="TB_AGENDA" Type="Self.TB_AGENDA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_TIPO_SERVICO">
+              <PropertyRef Name="CD_TIPO_SERVICO" />
+            </Principal>
+            <Dependent Role="TB_AGENDA">
+              <PropertyRef Name="CD_TIPO_SERVICO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_AGENDA_TB_USUARIO">
+          <End Role="TB_USUARIO" Type="Self.TB_USUARIO" Multiplicity="1" />
+          <End Role="TB_AGENDA" Type="Self.TB_AGENDA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_USUARIO">
+              <PropertyRef Name="CD_USUARIO" />
+            </Principal>
+            <Dependent Role="TB_AGENDA">
+              <PropertyRef Name="CD_USUARIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_ATENDIMENTO_TB_AGENDA">
+          <End Role="TB_AGENDA" Type="Self.TB_AGENDA" Multiplicity="1" />
+          <End Role="TB_ATENDIMENTO" Type="Self.TB_ATENDIMENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_AGENDA">
+              <PropertyRef Name="CD_AGENDA" />
+            </Principal>
+            <Dependent Role="TB_ATENDIMENTO">
+              <PropertyRef Name="CD_AGENDA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_ATENDIMENTO_TB_USUARIO">
+          <End Role="TB_USUARIO" Type="Self.TB_USUARIO" Multiplicity="1" />
+          <End Role="TB_ATENDIMENTO" Type="Self.TB_ATENDIMENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_USUARIO">
+              <PropertyRef Name="CD_USUARIO" />
+            </Principal>
+            <Dependent Role="TB_ATENDIMENTO">
+              <PropertyRef Name="CD_USUARIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PERFIL_USUARIO_TB_PERFIL">
+          <End Role="TB_PERFIL" Type="Self.TB_PERFIL" Multiplicity="1" />
+          <End Role="TB_PERFIL_USUARIO" Type="Self.TB_PERFIL_USUARIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_PERFIL">
+              <PropertyRef Name="CD_PERFIL" />
+            </Principal>
+            <Dependent Role="TB_PERFIL_USUARIO">
+              <PropertyRef Name="CD_PERFIL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PERFIL_USUARIO_TB_USUARIO">
+          <End Role="TB_USUARIO" Type="Self.TB_USUARIO" Multiplicity="1" />
+          <End Role="TB_PERFIL_USUARIO" Type="Self.TB_PERFIL_USUARIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_USUARIO">
+              <PropertyRef Name="CD_USUARIO" />
+            </Principal>
+            <Dependent Role="TB_PERFIL_USUARIO">
+              <PropertyRef Name="CD_USUARIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="BD_CLIMEDStoreContainer">
+          <EntitySet Name="TB_AGENDA" EntityType="Self.TB_AGENDA" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TB_ATENDIMENTO" EntityType="Self.TB_ATENDIMENTO" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TB_PACIENTE" EntityType="Self.TB_PACIENTE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TB_PERFIL" EntityType="Self.TB_PERFIL" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TB_PERFIL_USUARIO" EntityType="Self.TB_PERFIL_USUARIO" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TB_SITUACAO_AGENDA" EntityType="Self.TB_SITUACAO_AGENDA" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TB_TIPO_SERVICO" EntityType="Self.TB_TIPO_SERVICO" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TB_USUARIO" EntityType="Self.TB_USUARIO" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_TB_AGENDA_TB_PACIENTE" Association="Self.FK_TB_AGENDA_TB_PACIENTE">
+            <End Role="TB_PACIENTE" EntitySet="TB_PACIENTE" />
+            <End Role="TB_AGENDA" EntitySet="TB_AGENDA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_AGENDA_TB_SITUACAO_AGENDA" Association="Self.FK_TB_AGENDA_TB_SITUACAO_AGENDA">
+            <End Role="TB_SITUACAO_AGENDA" EntitySet="TB_SITUACAO_AGENDA" />
+            <End Role="TB_AGENDA" EntitySet="TB_AGENDA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_AGENDA_TB_TIPO_SERVICO" Association="Self.FK_TB_AGENDA_TB_TIPO_SERVICO">
+            <End Role="TB_TIPO_SERVICO" EntitySet="TB_TIPO_SERVICO" />
+            <End Role="TB_AGENDA" EntitySet="TB_AGENDA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_AGENDA_TB_USUARIO" Association="Self.FK_TB_AGENDA_TB_USUARIO">
+            <End Role="TB_USUARIO" EntitySet="TB_USUARIO" />
+            <End Role="TB_AGENDA" EntitySet="TB_AGENDA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_ATENDIMENTO_TB_AGENDA" Association="Self.FK_TB_ATENDIMENTO_TB_AGENDA">
+            <End Role="TB_AGENDA" EntitySet="TB_AGENDA" />
+            <End Role="TB_ATENDIMENTO" EntitySet="TB_ATENDIMENTO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_ATENDIMENTO_TB_USUARIO" Association="Self.FK_TB_ATENDIMENTO_TB_USUARIO">
+            <End Role="TB_USUARIO" EntitySet="TB_USUARIO" />
+            <End Role="TB_ATENDIMENTO" EntitySet="TB_ATENDIMENTO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PERFIL_USUARIO_TB_PERFIL" Association="Self.FK_TB_PERFIL_USUARIO_TB_PERFIL">
+            <End Role="TB_PERFIL" EntitySet="TB_PERFIL" />
+            <End Role="TB_PERFIL_USUARIO" EntitySet="TB_PERFIL_USUARIO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PERFIL_USUARIO_TB_USUARIO" Association="Self.FK_TB_PERFIL_USUARIO_TB_USUARIO">
+            <End Role="TB_USUARIO" EntitySet="TB_USUARIO" />
+            <End Role="TB_PERFIL_USUARIO" EntitySet="TB_PERFIL_USUARIO" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BD_CLIMED" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TB_AGENDA">
+          <Key>
+            <PropertyRef Name="CD_AGENDA" />
+          </Key>
+          <Property Name="CD_AGENDA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CD_PACIENTE" Type="Int32" Nullable="false" />
+          <Property Name="CD_TIPO_SERVICO" Type="Int32" Nullable="false" />
+          <Property Name="CD_USUARIO" Type="Int32" Nullable="false" />
+          <Property Name="CD_SITUACAO_AGENDA" Type="Byte" Nullable="false" />
+          <Property Name="DT_DATA" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="DS_OBSERVACAO" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="VL_VALOR" Type="Decimal" Precision="18" Scale="2" />
+          <NavigationProperty Name="TB_PACIENTE" Relationship="Self.FK_TB_AGENDA_TB_PACIENTE" FromRole="TB_AGENDA" ToRole="TB_PACIENTE" />
+          <NavigationProperty Name="TB_SITUACAO_AGENDA" Relationship="Self.FK_TB_AGENDA_TB_SITUACAO_AGENDA" FromRole="TB_AGENDA" ToRole="TB_SITUACAO_AGENDA" />
+          <NavigationProperty Name="TB_TIPO_SERVICO" Relationship="Self.FK_TB_AGENDA_TB_TIPO_SERVICO" FromRole="TB_AGENDA" ToRole="TB_TIPO_SERVICO" />
+          <NavigationProperty Name="TB_USUARIO" Relationship="Self.FK_TB_AGENDA_TB_USUARIO" FromRole="TB_AGENDA" ToRole="TB_USUARIO" />
+          <NavigationProperty Name="TB_ATENDIMENTO" Relationship="Self.FK_TB_ATENDIMENTO_TB_AGENDA" FromRole="TB_AGENDA" ToRole="TB_ATENDIMENTO" />
+        </EntityType>
+        <EntityType Name="TB_ATENDIMENTO">
+          <Key>
+            <PropertyRef Name="CD_ATENDIMENTO" />
+          </Key>
+          <Property Name="CD_ATENDIMENTO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CD_AGENDA" Type="Int32" Nullable="false" />
+          <Property Name="CD_USUARIO" Type="Int32" Nullable="false" />
+          <Property Name="DT_DATA" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="DS_DOENCA" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="DS_MEDICAMENTOS" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="TB_AGENDA" Relationship="Self.FK_TB_ATENDIMENTO_TB_AGENDA" FromRole="TB_ATENDIMENTO" ToRole="TB_AGENDA" />
+          <NavigationProperty Name="TB_USUARIO" Relationship="Self.FK_TB_ATENDIMENTO_TB_USUARIO" FromRole="TB_ATENDIMENTO" ToRole="TB_USUARIO" />
+        </EntityType>
+        <EntityType Name="TB_PACIENTE">
+          <Key>
+            <PropertyRef Name="CD_PACIENTE" />
+          </Key>
+          <Property Name="CD_PACIENTE" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NM_PACIENTE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DS_CPF" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DS_RG" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DS_TELEFONE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DT_NASCIMENTO" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="DS_CEP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DS_UF" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DS_CIDADE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DS_ENDERECO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DS_BAIRRO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="TB_AGENDA" Relationship="Self.FK_TB_AGENDA_TB_PACIENTE" FromRole="TB_PACIENTE" ToRole="TB_AGENDA" />
+        </EntityType>
+        <EntityType Name="TB_PERFIL">
+          <Key>
+            <PropertyRef Name="CD_PERFIL" />
+          </Key>
+          <Property Name="CD_PERFIL" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NM_PERFIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="TB_USUARIO" Relationship="Self.TB_PERFIL_USUARIO" FromRole="TB_PERFIL" ToRole="TB_USUARIO" />
+        </EntityType>
+        <EntityType Name="TB_SITUACAO_AGENDA">
+          <Key>
+            <PropertyRef Name="CD_SITUACAO_AGENDA" />
+          </Key>
+          <Property Name="CD_SITUACAO_AGENDA" Type="Byte" Nullable="false" />
+          <Property Name="NM_SITUACAO_AGENDA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="TB_AGENDA" Relationship="Self.FK_TB_AGENDA_TB_SITUACAO_AGENDA" FromRole="TB_SITUACAO_AGENDA" ToRole="TB_AGENDA" />
+        </EntityType>
+        <EntityType Name="TB_TIPO_SERVICO">
+          <Key>
+            <PropertyRef Name="CD_TIPO_SERVICO" />
+          </Key>
+          <Property Name="CD_TIPO_SERVICO" Type="Int32" Nullable="false" />
+          <Property Name="NM_TIPO_SERVICO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="TB_AGENDA" Relationship="Self.FK_TB_AGENDA_TB_TIPO_SERVICO" FromRole="TB_TIPO_SERVICO" ToRole="TB_AGENDA" />
+        </EntityType>
+        <EntityType Name="TB_USUARIO">
+          <Key>
+            <PropertyRef Name="CD_USUARIO" />
+          </Key>
+          <Property Name="CD_USUARIO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NM_USUARIO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DS_LOGIN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DS_SENHA" Type="String" MaxLength="350" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FL_ATIVO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="TB_AGENDA" Relationship="Self.FK_TB_AGENDA_TB_USUARIO" FromRole="TB_USUARIO" ToRole="TB_AGENDA" />
+          <NavigationProperty Name="TB_ATENDIMENTO" Relationship="Self.FK_TB_ATENDIMENTO_TB_USUARIO" FromRole="TB_USUARIO" ToRole="TB_ATENDIMENTO" />
+          <NavigationProperty Name="TB_PERFIL" Relationship="Self.TB_PERFIL_USUARIO" FromRole="TB_USUARIO" ToRole="TB_PERFIL" />
+        </EntityType>
+        <Association Name="FK_TB_AGENDA_TB_PACIENTE">
+          <End Role="TB_PACIENTE" Type="Self.TB_PACIENTE" Multiplicity="1" />
+          <End Role="TB_AGENDA" Type="Self.TB_AGENDA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_PACIENTE">
+              <PropertyRef Name="CD_PACIENTE" />
+            </Principal>
+            <Dependent Role="TB_AGENDA">
+              <PropertyRef Name="CD_PACIENTE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_AGENDA_TB_SITUACAO_AGENDA">
+          <End Role="TB_SITUACAO_AGENDA" Type="Self.TB_SITUACAO_AGENDA" Multiplicity="1" />
+          <End Role="TB_AGENDA" Type="Self.TB_AGENDA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_SITUACAO_AGENDA">
+              <PropertyRef Name="CD_SITUACAO_AGENDA" />
+            </Principal>
+            <Dependent Role="TB_AGENDA">
+              <PropertyRef Name="CD_SITUACAO_AGENDA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_AGENDA_TB_TIPO_SERVICO">
+          <End Role="TB_TIPO_SERVICO" Type="Self.TB_TIPO_SERVICO" Multiplicity="1" />
+          <End Role="TB_AGENDA" Type="Self.TB_AGENDA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_TIPO_SERVICO">
+              <PropertyRef Name="CD_TIPO_SERVICO" />
+            </Principal>
+            <Dependent Role="TB_AGENDA">
+              <PropertyRef Name="CD_TIPO_SERVICO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_AGENDA_TB_USUARIO">
+          <End Role="TB_USUARIO" Type="Self.TB_USUARIO" Multiplicity="1" />
+          <End Role="TB_AGENDA" Type="Self.TB_AGENDA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_USUARIO">
+              <PropertyRef Name="CD_USUARIO" />
+            </Principal>
+            <Dependent Role="TB_AGENDA">
+              <PropertyRef Name="CD_USUARIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_ATENDIMENTO_TB_AGENDA">
+          <End Role="TB_AGENDA" Type="Self.TB_AGENDA" Multiplicity="1" />
+          <End Role="TB_ATENDIMENTO" Type="Self.TB_ATENDIMENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_AGENDA">
+              <PropertyRef Name="CD_AGENDA" />
+            </Principal>
+            <Dependent Role="TB_ATENDIMENTO">
+              <PropertyRef Name="CD_AGENDA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_ATENDIMENTO_TB_USUARIO">
+          <End Role="TB_USUARIO" Type="Self.TB_USUARIO" Multiplicity="1" />
+          <End Role="TB_ATENDIMENTO" Type="Self.TB_ATENDIMENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_USUARIO">
+              <PropertyRef Name="CD_USUARIO" />
+            </Principal>
+            <Dependent Role="TB_ATENDIMENTO">
+              <PropertyRef Name="CD_USUARIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="TB_PERFIL_USUARIO">
+          <End Role="TB_PERFIL" Type="Self.TB_PERFIL" Multiplicity="*" />
+          <End Role="TB_USUARIO" Type="Self.TB_USUARIO" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="DB_A32723_CLIMEDEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TB_AGENDA" EntityType="Self.TB_AGENDA" />
+          <EntitySet Name="TB_ATENDIMENTO" EntityType="Self.TB_ATENDIMENTO" />
+          <EntitySet Name="TB_PACIENTE" EntityType="Self.TB_PACIENTE" />
+          <EntitySet Name="TB_PERFIL" EntityType="Self.TB_PERFIL" />
+          <EntitySet Name="TB_SITUACAO_AGENDA" EntityType="Self.TB_SITUACAO_AGENDA" />
+          <EntitySet Name="TB_TIPO_SERVICO" EntityType="Self.TB_TIPO_SERVICO" />
+          <EntitySet Name="TB_USUARIO" EntityType="Self.TB_USUARIO" />
+          <AssociationSet Name="FK_TB_AGENDA_TB_PACIENTE" Association="Self.FK_TB_AGENDA_TB_PACIENTE">
+            <End Role="TB_PACIENTE" EntitySet="TB_PACIENTE" />
+            <End Role="TB_AGENDA" EntitySet="TB_AGENDA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_AGENDA_TB_SITUACAO_AGENDA" Association="Self.FK_TB_AGENDA_TB_SITUACAO_AGENDA">
+            <End Role="TB_SITUACAO_AGENDA" EntitySet="TB_SITUACAO_AGENDA" />
+            <End Role="TB_AGENDA" EntitySet="TB_AGENDA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_AGENDA_TB_TIPO_SERVICO" Association="Self.FK_TB_AGENDA_TB_TIPO_SERVICO">
+            <End Role="TB_TIPO_SERVICO" EntitySet="TB_TIPO_SERVICO" />
+            <End Role="TB_AGENDA" EntitySet="TB_AGENDA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_AGENDA_TB_USUARIO" Association="Self.FK_TB_AGENDA_TB_USUARIO">
+            <End Role="TB_USUARIO" EntitySet="TB_USUARIO" />
+            <End Role="TB_AGENDA" EntitySet="TB_AGENDA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_ATENDIMENTO_TB_AGENDA" Association="Self.FK_TB_ATENDIMENTO_TB_AGENDA">
+            <End Role="TB_AGENDA" EntitySet="TB_AGENDA" />
+            <End Role="TB_ATENDIMENTO" EntitySet="TB_ATENDIMENTO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_ATENDIMENTO_TB_USUARIO" Association="Self.FK_TB_ATENDIMENTO_TB_USUARIO">
+            <End Role="TB_USUARIO" EntitySet="TB_USUARIO" />
+            <End Role="TB_ATENDIMENTO" EntitySet="TB_ATENDIMENTO" />
+          </AssociationSet>
+          <AssociationSet Name="TB_PERFIL_USUARIO" Association="Self.TB_PERFIL_USUARIO">
+            <End Role="TB_PERFIL" EntitySet="TB_PERFIL" />
+            <End Role="TB_USUARIO" EntitySet="TB_USUARIO" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BD_CLIMEDStoreContainer" CdmEntityContainer="DB_A32723_CLIMEDEntities">
+          <EntitySetMapping Name="TB_AGENDA">
+            <EntityTypeMapping TypeName="BD_CLIMED.TB_AGENDA">
+              <MappingFragment StoreEntitySet="TB_AGENDA">
+                <ScalarProperty Name="CD_AGENDA" ColumnName="CD_AGENDA" />
+                <ScalarProperty Name="CD_PACIENTE" ColumnName="CD_PACIENTE" />
+                <ScalarProperty Name="CD_TIPO_SERVICO" ColumnName="CD_TIPO_SERVICO" />
+                <ScalarProperty Name="CD_USUARIO" ColumnName="CD_USUARIO" />
+                <ScalarProperty Name="CD_SITUACAO_AGENDA" ColumnName="CD_SITUACAO_AGENDA" />
+                <ScalarProperty Name="DT_DATA" ColumnName="DT_DATA" />
+                <ScalarProperty Name="DS_OBSERVACAO" ColumnName="DS_OBSERVACAO" />
+                <ScalarProperty Name="VL_VALOR" ColumnName="VL_VALOR" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_ATENDIMENTO">
+            <EntityTypeMapping TypeName="BD_CLIMED.TB_ATENDIMENTO">
+              <MappingFragment StoreEntitySet="TB_ATENDIMENTO">
+                <ScalarProperty Name="CD_ATENDIMENTO" ColumnName="CD_ATENDIMENTO" />
+                <ScalarProperty Name="CD_AGENDA" ColumnName="CD_AGENDA" />
+                <ScalarProperty Name="CD_USUARIO" ColumnName="CD_USUARIO" />
+                <ScalarProperty Name="DT_DATA" ColumnName="DT_DATA" />
+                <ScalarProperty Name="DS_DOENCA" ColumnName="DS_DOENCA" />
+                <ScalarProperty Name="DS_MEDICAMENTOS" ColumnName="DS_MEDICAMENTOS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_PACIENTE">
+            <EntityTypeMapping TypeName="BD_CLIMED.TB_PACIENTE">
+              <MappingFragment StoreEntitySet="TB_PACIENTE">
+                <ScalarProperty Name="CD_PACIENTE" ColumnName="CD_PACIENTE" />
+                <ScalarProperty Name="NM_PACIENTE" ColumnName="NM_PACIENTE" />
+                <ScalarProperty Name="DS_CPF" ColumnName="DS_CPF" />
+                <ScalarProperty Name="DS_RG" ColumnName="DS_RG" />
+                <ScalarProperty Name="DS_TELEFONE" ColumnName="DS_TELEFONE" />
+                <ScalarProperty Name="DT_NASCIMENTO" ColumnName="DT_NASCIMENTO" />
+                <ScalarProperty Name="DS_CEP" ColumnName="DS_CEP" />
+                <ScalarProperty Name="DS_UF" ColumnName="DS_UF" />
+                <ScalarProperty Name="DS_CIDADE" ColumnName="DS_CIDADE" />
+                <ScalarProperty Name="DS_ENDERECO" ColumnName="DS_ENDERECO" />
+                <ScalarProperty Name="DS_BAIRRO" ColumnName="DS_BAIRRO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_PERFIL">
+            <EntityTypeMapping TypeName="BD_CLIMED.TB_PERFIL">
+              <MappingFragment StoreEntitySet="TB_PERFIL">
+                <ScalarProperty Name="CD_PERFIL" ColumnName="CD_PERFIL" />
+                <ScalarProperty Name="NM_PERFIL" ColumnName="NM_PERFIL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_SITUACAO_AGENDA">
+            <EntityTypeMapping TypeName="BD_CLIMED.TB_SITUACAO_AGENDA">
+              <MappingFragment StoreEntitySet="TB_SITUACAO_AGENDA">
+                <ScalarProperty Name="CD_SITUACAO_AGENDA" ColumnName="CD_SITUACAO_AGENDA" />
+                <ScalarProperty Name="NM_SITUACAO_AGENDA" ColumnName="NM_SITUACAO_AGENDA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_TIPO_SERVICO">
+            <EntityTypeMapping TypeName="BD_CLIMED.TB_TIPO_SERVICO">
+              <MappingFragment StoreEntitySet="TB_TIPO_SERVICO">
+                <ScalarProperty Name="CD_TIPO_SERVICO" ColumnName="CD_TIPO_SERVICO" />
+                <ScalarProperty Name="NM_TIPO_SERVICO" ColumnName="NM_TIPO_SERVICO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_USUARIO">
+            <EntityTypeMapping TypeName="BD_CLIMED.TB_USUARIO">
+              <MappingFragment StoreEntitySet="TB_USUARIO">
+                <ScalarProperty Name="CD_USUARIO" ColumnName="CD_USUARIO" />
+                <ScalarProperty Name="NM_USUARIO" ColumnName="NM_USUARIO" />
+                <ScalarProperty Name="DS_LOGIN" ColumnName="DS_LOGIN" />
+                <ScalarProperty Name="DS_SENHA" ColumnName="DS_SENHA" />
+                <ScalarProperty Name="FL_ATIVO" ColumnName="FL_ATIVO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="TB_PERFIL_USUARIO" TypeName="BD_CLIMED.TB_PERFIL_USUARIO" StoreEntitySet="TB_PERFIL_USUARIO">
+            <EndProperty Name="TB_PERFIL">
+              <ScalarProperty Name="CD_PERFIL" ColumnName="CD_PERFIL" />
+            </EndProperty>
+            <EndProperty Name="TB_USUARIO">
+              <ScalarProperty Name="CD_USUARIO" ColumnName="CD_USUARIO" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

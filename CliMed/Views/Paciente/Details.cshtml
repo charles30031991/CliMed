@@ -1,0 +1,99 @@
+﻿@model CliMed.Persistencia.TB_PACIENTE
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TB_PACIENTE</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NM_PACIENTE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NM_PACIENTE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DS_CPF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DS_CPF)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DS_RG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DS_RG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DS_TELEFONE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DS_TELEFONE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DT_NASCIMENTO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DT_NASCIMENTO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DS_CEP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DS_CEP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DS_UF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DS_UF)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DS_CIDADE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DS_CIDADE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DS_ENDERECO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DS_ENDERECO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DS_BAIRRO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DS_BAIRRO)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CD_PACIENTE }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,75 @@
+﻿@model CliMed.Persistencia.TB_AGENDA
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TB_AGENDA</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DT_DATA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DT_DATA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DS_OBSERVACAO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DS_OBSERVACAO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VL_VALOR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VL_VALOR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TB_PACIENTE.NM_PACIENTE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TB_PACIENTE.NM_PACIENTE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TB_SITUACAO_AGENDA.NM_SITUACAO_AGENDA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TB_SITUACAO_AGENDA.NM_SITUACAO_AGENDA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TB_TIPO_SERVICO.NM_TIPO_SERVICO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TB_TIPO_SERVICO.NM_TIPO_SERVICO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TB_USUARIO.NM_USUARIO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TB_USUARIO.NM_USUARIO)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CD_AGENDA }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

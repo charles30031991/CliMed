@@ -80,6 +80,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -196,14 +198,54 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AgendaController.cs" />
+    <Compile Include="Controllers\AtendimentoController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PacienteController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Persistencia\Banco_BD.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Banco_BD.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Persistencia\Banco_BD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Banco_BD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Persistencia\Banco_BD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Banco_BD.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Persistencia\TB_AGENDA.cs">
+      <DependentUpon>Banco_BD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Persistencia\TB_ATENDIMENTO.cs">
+      <DependentUpon>Banco_BD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Persistencia\TB_PACIENTE.cs">
+      <DependentUpon>Banco_BD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Persistencia\TB_PERFIL.cs">
+      <DependentUpon>Banco_BD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Persistencia\TB_SITUACAO_AGENDA.cs">
+      <DependentUpon>Banco_BD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Persistencia\TB_TIPO_SERVICO.cs">
+      <DependentUpon>Banco_BD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Persistencia\TB_USUARIO.cs">
+      <DependentUpon>Banco_BD.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -444,6 +486,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Persistencia\Banco_BD.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Banco_BD.edmx</DependentUpon>
+      <LastGenOutput>Banco_BD.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Persistencia\Banco_BD.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Banco_BD.edmx</DependentUpon>
+      <LastGenOutput>Banco_BD.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -554,6 +606,13 @@
     <Content Include="Dashboard\fonts\poppins\poppins-v5-latin-regular.ttf" />
     <Content Include="Dashboard\fonts\poppins\poppins-v5-latin-regular.woff" />
     <Content Include="Dashboard\fonts\poppins\poppins-v5-latin-regular.woff2" />
+    <EntityDeploy Include="Persistencia\Banco_BD.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Banco_BD.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Persistencia\Banco_BD.edmx.diagram">
+      <DependentUpon>Banco_BD.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -601,6 +660,26 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Dashboard\Painel_Adm.cshtml" />
+    <Content Include="Views\Usuario\Create.cshtml" />
+    <Content Include="Views\Usuario\Delete.cshtml" />
+    <Content Include="Views\Usuario\Details.cshtml" />
+    <Content Include="Views\Usuario\Edit.cshtml" />
+    <Content Include="Views\Usuario\Index.cshtml" />
+    <Content Include="Views\Paciente\Create.cshtml" />
+    <Content Include="Views\Paciente\Delete.cshtml" />
+    <Content Include="Views\Paciente\Details.cshtml" />
+    <Content Include="Views\Paciente\Edit.cshtml" />
+    <Content Include="Views\Paciente\Index.cshtml" />
+    <Content Include="Views\Atendimento\Create.cshtml" />
+    <Content Include="Views\Atendimento\Delete.cshtml" />
+    <Content Include="Views\Atendimento\Details.cshtml" />
+    <Content Include="Views\Atendimento\Edit.cshtml" />
+    <Content Include="Views\Atendimento\Index.cshtml" />
+    <Content Include="Views\Agenda\Create.cshtml" />
+    <Content Include="Views\Agenda\Delete.cshtml" />
+    <Content Include="Views\Agenda\Details.cshtml" />
+    <Content Include="Views\Agenda\Edit.cshtml" />
+    <Content Include="Views\Agenda\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -612,6 +691,9 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,57 @@
+﻿@model CliMed.Persistencia.TB_USUARIO
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>TB_USUARIO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NM_USUARIO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NM_USUARIO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DS_LOGIN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DS_LOGIN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DS_SENHA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DS_SENHA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FL_ATIVO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FL_ATIVO)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

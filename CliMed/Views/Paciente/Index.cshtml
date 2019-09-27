@@ -1,0 +1,88 @@
+﻿@model IEnumerable<CliMed.Persistencia.TB_PACIENTE>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NM_PACIENTE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DS_CPF)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DS_RG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DS_TELEFONE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DT_NASCIMENTO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DS_CEP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DS_UF)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DS_CIDADE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DS_ENDERECO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DS_BAIRRO)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NM_PACIENTE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DS_CPF)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DS_RG)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DS_TELEFONE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DT_NASCIMENTO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DS_CEP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DS_UF)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DS_CIDADE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DS_ENDERECO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DS_BAIRRO)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CD_PACIENTE }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CD_PACIENTE }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CD_PACIENTE })
+        </td>
+    </tr>
+}
+
+</table>

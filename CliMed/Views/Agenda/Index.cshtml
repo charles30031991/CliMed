@@ -1,0 +1,70 @@
+﻿@model IEnumerable<CliMed.Persistencia.TB_AGENDA>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DT_DATA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DS_OBSERVACAO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VL_VALOR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_PACIENTE.NM_PACIENTE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_SITUACAO_AGENDA.NM_SITUACAO_AGENDA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_TIPO_SERVICO.NM_TIPO_SERVICO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_USUARIO.NM_USUARIO)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DT_DATA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DS_OBSERVACAO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VL_VALOR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_PACIENTE.NM_PACIENTE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_SITUACAO_AGENDA.NM_SITUACAO_AGENDA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_TIPO_SERVICO.NM_TIPO_SERVICO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_USUARIO.NM_USUARIO)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CD_AGENDA }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CD_AGENDA }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CD_AGENDA })
+        </td>
+    </tr>
+}
+
+</table>

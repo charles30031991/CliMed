@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BD_CLIMEDStoreContainer" CdmEntityContainer="DB_A32723_CLIMEDEntities">
+    <EntitySetMapping Name="TB_AGENDA">
+      <EntityTypeMapping TypeName="BD_CLIMED.TB_AGENDA">
+        <MappingFragment StoreEntitySet="TB_AGENDA">
+          <ScalarProperty Name="CD_AGENDA" ColumnName="CD_AGENDA" />
+          <ScalarProperty Name="CD_PACIENTE" ColumnName="CD_PACIENTE" />
+          <ScalarProperty Name="CD_TIPO_SERVICO" ColumnName="CD_TIPO_SERVICO" />
+          <ScalarProperty Name="CD_USUARIO" ColumnName="CD_USUARIO" />
+          <ScalarProperty Name="CD_SITUACAO_AGENDA" ColumnName="CD_SITUACAO_AGENDA" />
+          <ScalarProperty Name="DT_DATA" ColumnName="DT_DATA" />
+          <ScalarProperty Name="DS_OBSERVACAO" ColumnName="DS_OBSERVACAO" />
+          <ScalarProperty Name="VL_VALOR" ColumnName="VL_VALOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ATENDIMENTO">
+      <EntityTypeMapping TypeName="BD_CLIMED.TB_ATENDIMENTO">
+        <MappingFragment StoreEntitySet="TB_ATENDIMENTO">
+          <ScalarProperty Name="CD_ATENDIMENTO" ColumnName="CD_ATENDIMENTO" />
+          <ScalarProperty Name="CD_AGENDA" ColumnName="CD_AGENDA" />
+          <ScalarProperty Name="CD_USUARIO" ColumnName="CD_USUARIO" />
+          <ScalarProperty Name="DT_DATA" ColumnName="DT_DATA" />
+          <ScalarProperty Name="DS_DOENCA" ColumnName="DS_DOENCA" />
+          <ScalarProperty Name="DS_MEDICAMENTOS" ColumnName="DS_MEDICAMENTOS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_PACIENTE">
+      <EntityTypeMapping TypeName="BD_CLIMED.TB_PACIENTE">
+        <MappingFragment StoreEntitySet="TB_PACIENTE">
+          <ScalarProperty Name="CD_PACIENTE" ColumnName="CD_PACIENTE" />
+          <ScalarProperty Name="NM_PACIENTE" ColumnName="NM_PACIENTE" />
+          <ScalarProperty Name="DS_CPF" ColumnName="DS_CPF" />
+          <ScalarProperty Name="DS_RG" ColumnName="DS_RG" />
+          <ScalarProperty Name="DS_TELEFONE" ColumnName="DS_TELEFONE" />
+          <ScalarProperty Name="DT_NASCIMENTO" ColumnName="DT_NASCIMENTO" />
+          <ScalarProperty Name="DS_CEP" ColumnName="DS_CEP" />
+          <ScalarProperty Name="DS_UF" ColumnName="DS_UF" />
+          <ScalarProperty Name="DS_CIDADE" ColumnName="DS_CIDADE" />
+          <ScalarProperty Name="DS_ENDERECO" ColumnName="DS_ENDERECO" />
+          <ScalarProperty Name="DS_BAIRRO" ColumnName="DS_BAIRRO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_PERFIL">
+      <EntityTypeMapping TypeName="BD_CLIMED.TB_PERFIL">
+        <MappingFragment StoreEntitySet="TB_PERFIL">
+          <ScalarProperty Name="CD_PERFIL" ColumnName="CD_PERFIL" />
+          <ScalarProperty Name="NM_PERFIL" ColumnName="NM_PERFIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_SITUACAO_AGENDA">
+      <EntityTypeMapping TypeName="BD_CLIMED.TB_SITUACAO_AGENDA">
+        <MappingFragment StoreEntitySet="TB_SITUACAO_AGENDA">
+          <ScalarProperty Name="CD_SITUACAO_AGENDA" ColumnName="CD_SITUACAO_AGENDA" />
+          <ScalarProperty Name="NM_SITUACAO_AGENDA" ColumnName="NM_SITUACAO_AGENDA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_TIPO_SERVICO">
+      <EntityTypeMapping TypeName="BD_CLIMED.TB_TIPO_SERVICO">
+        <MappingFragment StoreEntitySet="TB_TIPO_SERVICO">
+          <ScalarProperty Name="CD_TIPO_SERVICO" ColumnName="CD_TIPO_SERVICO" />
+          <ScalarProperty Name="NM_TIPO_SERVICO" ColumnName="NM_TIPO_SERVICO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_USUARIO">
+      <EntityTypeMapping TypeName="BD_CLIMED.TB_USUARIO">
+        <MappingFragment StoreEntitySet="TB_USUARIO">
+          <ScalarProperty Name="CD_USUARIO" ColumnName="CD_USUARIO" />
+          <ScalarProperty Name="NM_USUARIO" ColumnName="NM_USUARIO" />
+          <ScalarProperty Name="DS_LOGIN" ColumnName="DS_LOGIN" />
+          <ScalarProperty Name="DS_SENHA" ColumnName="DS_SENHA" />
+          <ScalarProperty Name="FL_ATIVO" ColumnName="FL_ATIVO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="TB_PERFIL_USUARIO" TypeName="BD_CLIMED.TB_PERFIL_USUARIO" StoreEntitySet="TB_PERFIL_USUARIO">
+      <EndProperty Name="TB_PERFIL">
+        <ScalarProperty Name="CD_PERFIL" ColumnName="CD_PERFIL" />
+      </EndProperty>
+      <EndProperty Name="TB_USUARIO">
+        <ScalarProperty Name="CD_USUARIO" ColumnName="CD_USUARIO" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

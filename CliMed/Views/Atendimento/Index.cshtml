@@ -1,0 +1,58 @@
+﻿@model IEnumerable<CliMed.Persistencia.TB_ATENDIMENTO>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DT_DATA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DS_DOENCA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DS_MEDICAMENTOS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_AGENDA.DS_OBSERVACAO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_USUARIO.NM_USUARIO)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DT_DATA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DS_DOENCA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DS_MEDICAMENTOS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_AGENDA.DS_OBSERVACAO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_USUARIO.NM_USUARIO)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CD_ATENDIMENTO }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CD_ATENDIMENTO }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CD_ATENDIMENTO })
+        </td>
+    </tr>
+}
+
+</table>
